@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+class soal2 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("=== RUMUS PHYTAGORAS ===");
+
+        // a
+        System.out.println("a =");
+        float a = input.nextFloat();
+
+        // b
+        System.out.println("b =");
+        float b = input.nextFloat();
+
+        // c
+        System.out.println("c =");
+        float c = input.nextFloat();
+
+        // Rumus
+        float A = (b * b - c * c);
+        float B = (a * a - c * c);
+        float C = (a * a - b * b);
+        double akarA = Math.sqrt(A);
+        double akarB = Math.sqrt(B);
+        double akarC = Math.sqrt(C);
+        System.out.println("a :" + akarA);
+        System.out.println("b :" + akarB);
+        System.out.println("c :" + akarC);
+    }
+}
